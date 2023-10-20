@@ -1,0 +1,600 @@
+html,
+body {
+  padding: 0;
+  margin: 0;
+  font-family: -apple-system, BlinkMacSystemFont, Segoe UI, Roboto, Oxygen,
+    Ubuntu, Cantarell, Fira Sans, Droid Sans, Helvetica Neue, sans-serif;
+}
+.nav {
+  background-color:white;
+  height: 50px;
+  width: 100%;
+  max-width: 960px;
+   justify-content: space-between;
+  align-items:center;
+}
+.row{
+  display: flex;
+  flex-wrap: wrap;
+  
+}
+.nav-navbar {
+   display: flex;
+    flex-direction: row;
+    list-style: none;
+  padding-left: 100px;
+  }
+
+
+
+.navbar .nav-link {
+    text-decoration: none;
+    color: #333;
+    margin-left: 10px;
+}
+.nav-item {
+   display: flex;
+   align-items: center;
+ padding:20px;
+  justify-content: space-around;
+} 
+.nav-item .icon,
+.nav-item .text {
+ align-self: flex-end;
+}
+.nav-item .icon {
+ margin-top: 10px; /* Adjust this value according to your needs */
+}
+nav a {
+  color: black;
+  text-decoration: none;
+  font-size: 20px;
+  text-align: center;
+}
+nav a:hover {
+  stroke: black;
+
+  font-size: 150%;
+
+}
+.col-mb-2 {
+ flex: 0 0 50%;
+  margin-left: -15px;
+  margin-right: -15px;
+ max-width: 50%;
+}
+/* Navbar brand */
+.navbar-brand {
+  color: black;
+  text-decoration: none;
+  margin-left: 8rem;
+}
+
+/* Navbar toggler button */
+.navbar-toggler {
+   padding: 0.25rem 0.75rem;
+   font-size: 1.25rem;
+   line-height: 1;
+   background-color: transparent;
+   border: 1px solid transparent;
+   border-radius: 0.25rem;
+   transition: background-color 0.15s ease-in-out, border-color 0.15s ease-in-out, box-shadow 0.15s ease-in-out;
+}
+.navbar-toggler:hover, .navbar-toggler:focus {
+ text-decoration: none;
+ outline: none;
+}
+.navbar-toggler:not(:disabled):not(.disabled) {
+ cursor: pointer;
+}
+
+.navbar-toggler:not(:disabled):not(.disabled):active, .navbar-toggler:not(:disabled):not(.disabled):focus {
+ box-shadow: none;
+}
+a {
+  color: inherit;
+  text-decoration: none;
+}
+
+* {
+  box-sizing: border-box;
+}
+
+
+
+.title {
+  margin: 0;
+  line-height: 1.15;
+  font-size: 4rem;
+}
+
+.title,
+.description {
+  text-align: center;
+}
+
+.description {
+  margin: 4rem 0;
+  line-height: 1.5;
+  font-size: 1.5rem;
+}
+
+.code {
+  background: #fafafa;
+  border-radius: 5px;
+  padding: 0.75rem;
+  font-size: 1.1rem;
+  font-family: Menlo, Monaco, Lucida Console, Liberation Mono, DejaVu Sans Mono,
+    Bitstream Vera Sans Mono, Courier New, monospace;
+}
+
+.grid {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  flex-wrap: wrap;
+  max-width: 800px;
+}
+
+.card {
+  margin: 1rem;
+  padding: 1.5rem;
+  text-align: left;
+  color: inherit;
+  text-decoration: none;
+  border: 1px solid #eaeaea;
+  border-radius: 10px;
+  transition: color 0.15s ease, border-color 0.15s ease;
+  max-width: 300px;
+}
+
+.card:hover,
+.card:focus,
+.card:active {
+  color: #0070f3;
+  border-color: #0070f3;
+}
+
+.card h2 {
+  margin: 0 0 1rem 0;
+  font-size: 1.5rem;
+}
+
+.card p {
+  margin: 0;
+  font-size: 1.25rem;
+  line-height: 1.5;
+}
+
+@media (max-width: 600px) {
+  .grid {
+    width: 100%;
+    flex-direction: column;
+  }
+}
+
+.flex {
+  display: flex;
+  flex-direction: row;
+  flex-wrap: wrap;
+  column-gap: 20px;
+}
+@media (max-width: 991px) {
+ .flex {
+    flex-direction: row; /* On small screens, make the columns stack vertically */
+ }
+}
+.mb-1{
+  margin-bottom: 8px;
+  color: var(--color-input-label);
+  font-size: 14px;
+  font-weight: 600;
+}
+form {
+    width: 450px;
+    min-height: 500px;
+    height: auto;
+    border-radius: 5px;    
+}
+/* form Container */
+
+
+
+
+/* //////////////////////////////////////////// */
+/* //////////////////////////////////////////// */
+
+
+.input-item {
+    background: #fff;
+    color: #333;
+    padding: 14.5px 0px 15px 9px;
+    border-radius: 5px 0px 0px 5px;
+}
+
+
+.style {
+  background-color:#0a66c2;
+  color: #ffffff;
+  font-size: 1.3em;
+  font-weight: 600;
+  position: relative;
+  outline: none;
+  border-radius: 50px;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  cursor: pointer;
+  height: 55px;
+  width: 100%;
+
+  
+}
+.section{
+  max-width: 1128px;
+  position: relative;
+  display: flex;
+  width: 100%;
+  align-items: center;
+  flex-wrap: wrap;
+  }
+@media(max-width:767px)
+{
+  .section{
+    padding-left: 16px;
+    padding-right: 16px;
+}
+}
+.set{
+  align-self: flex-start;
+  flex-shrink: 0;
+  width: 100%;
+  margin-bottom: 24px;
+}
+.b2{
+  background-color:white;
+  color: black;
+  font-size: 16px;
+  font-weight: 600;
+  line-height: 1.25;
+  position: relative;
+  outline: none;
+  border-radius: 50px;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  cursor: pointer;
+  min-height: 48px;
+  height: fit-content;
+min-width:fit-content;
+  padding: 20px;
+  width: min-content;
+  border: 1px solid black;
+  margin: 5px;  
+  overflow-wrap: break-word;
+}
+.b2:hover{
+  background-color: #efe6e6;
+}
+.b3
+{
+  background-color:white;
+  color:#0a66c2 ;
+  font-size: 16px;
+  font-weight: 600;
+  line-height: 1.25;
+  position: relative;
+  outline: none;
+  border-radius: 50px;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  cursor: pointer;
+  min-height: 48px;
+  height: min-content;
+min-width:fit-content;
+  width: min-content;
+  border: 1px solid #0a66c2;
+  padding: 15px;  
+  
+}
+.b3:hover{
+  background-color:#d6dee6 ;
+;
+}
+.divider {
+  font-size: 30px;
+  display: flex;
+  align-items: center;
+  padding-bottom: 24px;
+  padding-top: 16px;
+}
+
+.divider::before, .divider::after {
+  flex: 1;
+  content: '   ';
+  padding: 1px;
+  background-color:lightgray;
+  margin: 15px;
+}
+/* Show/hide password Font Icon */
+#eye {
+    background: #fff;
+    color: #333;
+
+    margin: 4px 0 0 0;
+    margin-left: 25px;
+    padding: 5px;
+    border-radius: 0px 5px 5px 0px;
+    position: relative;
+    right: 1%;
+    top: -.2%;
+    z-index: 5;
+
+    cursor: pointer;
+}
+/* inputs form  */
+input[class="form-input"]{
+    width: 346px;
+    height: 5px;
+
+    margin-top: 1%;
+    padding: 7px;
+
+    font-size: 16px;
+    font-family: 'Abel', sans-serif;
+    color: #5E6472;
+
+    outline: none;
+    border: none;
+
+    border-radius: 0px 5px 5px 0px;
+    transition: 0.2s linear;
+
+}
+input[id="txt-input"] {width: 250px;}
+/* focus  */
+input:focus {
+    transform: translateX(-2px);
+    border-radius: 5px;
+
+}
+
+.google{
+    background-color: #e6f5f9;
+    color: black;
+    font-size: 1.3em;
+    font-weight: 600;
+    position: relative;
+    outline: none;
+    border-radius: 50px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    cursor: pointer;
+    height: 40px;
+    width: 90%;
+  margin-left: 2px;
+border: 1px solid #b8ddea;
+
+  }
+  
+
+.withlink {
+  background-color:white;
+      color: black;
+      font-size: 1.3em;
+      font-weight: 600;
+      position: relative;
+      outline: none;
+      border-radius: 50px;
+      display: flex;
+      justify-content: center;
+      align-items: center;
+      cursor: pointer;
+      height: 50px;
+      width: 90%;
+    margin-left: 2px;
+  border: 1px solid black;
+}
+
+
+.text-input{
+  background-color: var(--color-input-container);
+  border-color: var(--color-input-container-border);
+  color: var(--color-input-label);
+  border-radius: 4px;
+  border-width: 1px;
+  border-style: solid;
+  padding-left: 10px;
+  padding-right: 10px;
+  padding-top: 14px;
+  padding-bottom: 14px;
+  font-family: -apple-system, system-ui, BlinkMacSystemFont, 'Segoe UI', Roboto, 'Helvetica Neue', 'Fira Sans', Ubuntu, Oxygen, 'Oxygen Sans', Cantarell, 'Droid Sans', 'Apple Color Emoji', 'Segoe UI Emoji', 'Segoe UI Emoji', 'Segoe UI Symbol', 'Lucida Grande', Helvetica, Arial, sans-serif;
+  font-size: 16px;
+}
+
+.row2{
+  display: flex;
+    flex-direction:row;
+    justify-content: space-between;
+    align-items: center;
+
+  }
+.pd{
+  --talent-finder-header-offset: 5px;
+  width: calc(408px + var(--talent-finder-header-offset));
+  font-family: -apple-system, system-ui, BlinkMacSystemFont, 'Segoe UI', Roboto, 'Helvetica Neue', 'Fira Sans', Ubuntu, Oxygen, 'Oxygen Sans', Cantarell, 'Droid Sans', 'Apple Color Emoji', 'Segoe UI Emoji', 'Segoe UI Emoji', 'Segoe UI Symbol', 'Lucida Grande', Helvetica, Arial, sans-serif;    color: #b24020;
+  font-size:32px;font-weight:500;
+  margin-left:150px;
+}
+
+
+/* Hide the images by default */
+.mySlides {
+  display: none;
+}
+
+/* Next & previous buttons */
+.prev, .next {
+  cursor: pointer;
+  position: absolute;
+  top: 50%;
+  width: auto;
+  margin-top: -22px;
+  padding: 16px;
+  color: black;
+  font-weight: bold;
+  font-size: 18px;
+  transition: 0.6s ease;
+  border-radius: 0 3px 3px 0;
+  user-select: none;
+  background-color:#e5e3e1;
+}
+
+/* Position the "next button" to the right */
+.next {
+  right: 0;
+  border-radius: 3px 0 0 3px;
+}
+
+/* On hover, add a black background color with a little bit see-through */
+.prev:hover, .next:hover {
+  background-color: rgba(0,0,0,0.8);
+}
+.fade {
+  animation-name: fade;
+  animation-duration: 1.5s;
+}
+
+@keyframes fade {
+  from {opacity: .4}
+  to {opacity: 1}
+}
+slideshow-container{
+  transform: translate3d(-623px, 0px, 0px);
+  transition-timing-function: cubic-bezier(0.34, 0, 0.21, 1);
+  transition-duration: 336ms;
+  transition-property: all;
+  align-items: stretch;
+  list-style-type: none;
+ display: flex;
+}
+
+.dropdown {
+  max-width: 13em;
+  margin: 40px auto 0;
+  position: relative;
+  width: 100%;
+}
+
+.dropdown-btn {
+  background:white;
+  font-size: 18px;
+  min-width: fit-content;
+  width: max-content;
+  color: black;
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  padding: 15px;
+  border: 1px solid black;
+  cursor: pointer;
+
+}
+
+.arrow {
+  border-left: 5px solid transparent;
+  border-right: 5px solid transparent;
+  border-top: 6px solid black;
+  transition: transform ease-in-out 0.3s;
+}
+
+.dropdown-content {
+  list-style: none;
+  position: absolute;
+  top: 3.2em;
+  min-width: fit-content;
+  width: max-content;
+  visibility: hidden;
+ 
+/*   overflow: hidden; */
+  transform: translateY(-1em);
+  transition: transform ease 0.3s;
+}
+
+input[type="checkbox"]:checked ~ .dropdown-content {
+  visibility: visible;
+  transform: translateY(0);
+  
+}
+
+.dropdown-content li {
+  background-color: white;
+  
+}
+
+input[type="checkbox"]:checked + label > .arrow {
+  transform: rotate(180deg);
+}
+
+input[type="checkbox"] {
+  opacity: 0;
+  position: absolute;
+}
+
+input[type="checkbox"]:focus + label {
+  background-color: whitesmoke;
+}
+
+.dropdown-content li:hover {
+  background: whitesmoke;
+  
+}
+.dropdown-content li a:hover{
+  text-underline-offset: auto;
+
+  text-underline-position: under;
+}
+.dropdown-content li a {
+  display: block;
+  padding: 0.7em 0.5em;
+  color: black;
+  margin: 0.1em 0;
+
+}
+
+
+/* base styles */
+* {
+  box-sizing: border-box;
+  margin: 0;
+  padding: 0;
+}
+.bold{
+  font-family: -apple-system, system-ui, BlinkMacSystemFont, 'Segoe UI', Roboto, 'Helvetica Neue', 'Fira Sans', Ubuntu, Oxygen, 'Oxygen Sans', Cantarell, 'Droid Sans', 'Apple Color Emoji', 'Segoe UI Emoji', 'Segoe UI Emoji', 'Segoe UI Symbol', 'Lucida Grande', Helvetica, Arial, sans-serif;
+  font-size: 16px;
+  font-weight: 600;
+  line-height: 1.25;
+  color: rgba(0, 0, 0, 0.9);
+}
+.none{
+  font-family: -apple-system, system-ui, BlinkMacSystemFont, 'Segoe UI', Roboto, 'Helvetica Neue', 'Fira Sans', Ubuntu, Oxygen, 'Oxygen Sans', Cantarell, 'Droid Sans', 'Apple Color Emoji', 'Segoe UI Emoji', 'Segoe UI Emoji', 'Segoe UI Symbol', 'Lucida Grande', Helvetica, Arial, sans-serif;
+  font-size: 16px;
+  font-weight: 400;
+  line-height: 1.25;
+  color: rgba(0, 0, 0, 0.6);
+}
+.scrollable-menu {
+ width: 300px;
+  height: 500px;
+ overflow: scroll;
+}
+
+.container {
+    overflow-x: hidden;
+}
+.bg{
+  background-color:lightcyan;
+  width:500px;
+}
